@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Landing Page</title>
+<link rel="stylesheet" href="Landing%20Page_files/styles.css"></head>
+<body>
+
+    <div class="header">
+        <!-- do I need to give this a div? -->
+        Header Logo
+        <ul class="header-links">
+            <li>header link one</li>
+            <li>header link two</li>
+            <li>header link three</li>
+        </ul>
+    </div>
+    
+    <div class="hero">
+        <div class="title-section">
+            <div class="title">This website is awesome</div>
+            <div class="title-sub">this is text under the title with smaller font and lower contrast</div>
+            <button class="sign-up">Sign up</button>
+        </div>
+        <img src="Landing%20Page_files/sky.jpg" alt="pretty sky" width="300" height="auto">
+    </div>
+
+    <div class="second-section">
+        <div class="info-header">Some random information</div> 
+        <div class="cards">
+            <div class="card">
+                <img src="Landing%20Page_files/black.jpg" alt="space" width="50" height="50">
+                <div class="card-text">this is some subtext under an image</div>
+            </div>
+            <div class="card">
+                <img src="Landing%20Page_files/black.jpg" alt="space" width="50" height="50">
+                <div class="card-text">this is some subtext under an image</div>
+            </div>
+            <div class="card">
+                <img src="Landing%20Page_files/black.jpg" alt="space" width="50" height="50">
+                <div class="card-text">this is some subtext under an image</div>
+            </div>
+            <div class="card">
+                <img src="Landing%20Page_files/black.jpg" alt="space" width="50" height="50">
+                <div class="card-text">this is some subtext under an image</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third-section">
+        <div class="quote-container">
+            <div class="quote">Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+ laboris nisi ut aliquip ex ea commodo consequat.</div>
+            <div class="quoted">-The internet</div>
+        </div>
+    </div>
+
+    <div class="fourth-section">
+        <div class="box">
+            <!-- throw button in the same div to maintain row orientation -->
+            <div class="call">Call to action! It's time!        
+                <div class="call-sub">Click that button to sell your soul to me</div>
+            </div>
+            <button class="sign-up">Sign-up</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Copyright © The Odin Project 2022
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

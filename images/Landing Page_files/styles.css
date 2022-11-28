@@ -62,7 +62,7 @@ button {
 
 /* button as a child of .box */
 .box button {
-    border: 2px solid whitesmoke;
+    border: 1px solid whitesmoke;
 }
 
 .box {
@@ -153,19 +153,4 @@ button {
 
 .call {
     font-weight: bold;
-}
-
-.call > .call-sub {
-    font-weight: 400;
-}
-
-.footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex: 1;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
