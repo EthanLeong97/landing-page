@@ -82,6 +82,7 @@ button {
     flex: 1;
     padding: 50px;
 }
+
 .info-header {
     font-size: 36px;
     font-weight: bolder;
@@ -110,7 +111,8 @@ button {
 }
 
 .card-text {
-    font-size: 12px;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
 
@@ -143,6 +145,7 @@ button {
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
+    padding-top: 8px;
 }
 
 .fourth-section {
